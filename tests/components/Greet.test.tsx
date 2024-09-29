@@ -3,10 +3,10 @@ import Greet from "../../src/components/Greet";
 
 describe("Greet", () => {
     it("should render Hello with the name when name is provided", () => {
-        render(<Greet name="Hanish" />);
+        render(<Greet name="Jhone Doe" />);
         const heading = screen.getByRole("heading");
         expect(heading).toBeInTheDocument();
-        expect(heading).toHaveTextContent(/hanish/i);
+        expect(heading).toHaveTextContent(/jhone doe/i);
     });
     it("should render login button when the provided name is empty", () => {
         render(<Greet />);
